@@ -1,0 +1,41 @@
+
+.fullheatscore {
+    font-weight: 600;
+    font-size: 30;
+    color: rgb(242, 200, 217);
+    text-align: center;
+}
+
+.yourheatscore {
+    font-weight: 600;
+    font-size: 30;
+    color: rgb(230, 104, 137);
+    text-align: center;
+}
+
+.block {
+    font-weight: 400;
+    font-size: 27;
+    color: rgb(215, 134, 155);
+    text-align: center;
+}
+
+.friendzone {
+    font-weight: 400;
+    font-size: 27;
+    color: rgb(215, 134, 155);
+    text-align: center;
+}
+
+.date {
+    font-weight: 400;
+    font-size: 27;
+    color: rgb(215, 134, 155);
+    text-align: center;
+}
+
+.heart {
+    display: block;
+    margin: auto;
+    margin-top: 130px;
+}
