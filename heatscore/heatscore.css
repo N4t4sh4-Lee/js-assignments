@@ -1,5 +1,6 @@
 
 .fullheatscore {
+    margin-top: 130px;
     font-weight: 600;
     font-size: 30;
     color: rgb(242, 200, 217);
@@ -37,5 +38,25 @@
 .heart {
     display: block;
     margin: auto;
-    margin-top: 130px;
+    margin-top: 40px;
+}
+
+.friendheart {
+    display: block;
+    margin: auto;
+    margin-top: 40px;
+}
+
+.heartbreak {
+    display: block;
+    margin: auto;
+    margin-top: 40px;
+}
+
+
+.error {
+    font-size: 60;
+    font-weight: 700;
+    color: rgb(215, 134, 155);
+    text-align: center;
 }
