@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="scoreboard.js"></script>
+    <link rel="stylesheet" href="scoreboard.css">
+
+    <div>
+        <div class="background"> 
+            <img src="https://cdn.pixabay.com/photo/2019/06/10/15/11/basketball-4264543__480.png" id="basketball">    
+            <p id = "period">PERIOD</p>
+            <p id = "home">HOME</p>
+            <p id = "visitor">VISITOR</p>
+        </div>
+    
+        <div class = "period1">1</div>
+    
+        <div class = "timer">
+            <div class = "timermin">15:</div>
+            <div class = "timersec">00</div>    
+        </div>
+    
+        <div class = "home1">0</div>
+    
+        <div class = "visitor1">0</div>
+    
+        <div class = "shotclock">24</div>    
+    </div>
+
+
+    <div class = "buttons">
+        <button onclick = "addperiod()">+</button>
+        <button onclick = "subperiod()">-</button>
+    
+        <button onclick = "start()">Start Interval</button>
+        <button onclick = "stop()">Stop Interval</button>
+        <button onclick = "reset()">Reset</button>
+    
+        <button onclick = "addscore()">+</button>
+        <button onclick = "subscore()">-</button>
+        <button onclick = "addscore2()">++</button>
+        <button onclick = "subscore2()">--</button>
+        <button onclick = "addscore3()">+++</button>
+        <button onclick = "subscore3()">---</button>
+    
+        <button onclick = "addscore()">+</button>
+        <button onclick = "subscore()">-</button>
+        <button onclick = "addscore2()">++</button>
+        <button onclick = "subscore2()">--</button>
+        <button onclick = "addscore3()">+++</button>
+        <button onclick = "subscore3()">---</button>
+    
+        <button onclick = "shotclock()">start shot clock</button>
+        <button onclick = "resetshotclock()">reset shot clock</button>    
+    </div>
+</body>
+</html>
