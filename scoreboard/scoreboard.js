@@ -1,13 +1,13 @@
 let period = 1
 
-function addperiod() {
+function addPeriod() {
     if (period < 4) {
         period++
     }
     document.querySelector(".period1").innerText = period
 }
 
-function subperiod() {
+function subPeriod() {
     if (period > 0) {
         period--
     }
@@ -17,72 +17,72 @@ function subperiod() {
 
 let score = 0
 
-function addscore() {
+function addScore() {
     score++
     document.querySelector(".home1").innerText = score
 }
 
-function subscore() {
+function subScore() {
     if (score > 0) {
         score--
     }
     document.querySelector(".home1").innerText = score
 }
 
-function addscore2() {
+function addScore2() {
     score = score + 2
     document.querySelector(".home1").innerText = score
 }
 
-function subscore2() {
+function subScore2() {
     if (score > 1) {
         score = score - 2
     }
     document.querySelector(".home1").innerText = score
 }
 
-function addscore3() {
+function addScore3() {
     score = score + 3
     document.querySelector(".home1").innerText = score
 }
 
-function subscore3() {
+function subScore3() {
     if (score > 2) {
         score = score - 3
     }
     document.querySelector(".home1").innerText = score
 }
 
-function addscore1() {
+function addScore1() {
     score++
     document.querySelector(".visitor1").innerText = score
 }
 
-function subscore1() {
+function subScore1() {
     if (score > 0) {
         score--
     }
     document.querySelector(".visitor1").innerText = score
 }
 
-function addscore22() {
+function addScore22() {
     score = score + 2
     document.querySelector(".visitor1").innerText = score
 }
 
-function subscore22() {
+function subScore22() {
     if (score > 1) {
         score = score - 2
     }
     document.querySelector(".visitor1").innerText = score
 }
 
-function addscore33() {
+function addScore33() {
     score = score + 3
     document.querySelector(".visitor1").innerText = score
 }
 
-function subscore33() {
+function subScore33() {
     if (score > 2) {
         score = score - 3
     }
@@ -97,7 +97,7 @@ let numInterval
 
    
 function start() {
-    numInterval = setInterval(subtime,1000)
+    numInterval = setInterval(subTime,1000)
 }
 
 function stop() {
@@ -110,27 +110,27 @@ function reset() {
     document.querySelector(".timer").innerText = "15:00"
 }
 
-function subtime() {
+function subTime() {
     if (min === 15) {
-        document.querySelector(".timermin").innerText = "14:" 
-        document.querySelector(".timersec").innerText = "59" 
+        document.querySelector(".timerMin").innerText = "14:" 
+        document.querySelector(".timerSec").innerText = "59" 
         sec--
     }
     sec--
-    document.querySelector(".timersec").innerText = sec
+    document.querySelector(".timerSec").innerText = sec
     if (sec === 0) {
         min--
         sec = 60
         if (min < 10) { 
-            document.querySelector(".timermin").innerText = "0" + min + ":"
+            document.querySelector(".timerMin").innerText = "0" + min + ":"
         } else {
-            document.querySelector(".timermin").innerText = min + ":"
+            document.querySelector(".timerMin").innerText = min + ":"
         }
     } 
     if (sec < 10) { 
-        document.querySelector(".timersec").innerText = "0" + sec 
+        document.querySelector(".timerSec").innerText = "0" + sec 
     } else {
-        document.querySelector(".timersec").innerText = sec
+        document.querySelector(".timerSec").innerText = sec
     }
     if (min === 0) {
         document.querySelector(".timer").innerText = "00:00"
@@ -141,20 +141,20 @@ let sec1 = 24
 let numInterval1
 
 function shotclock() {
-    numInterval1 = setInterval(subsec,1000)
+    numInterval1 = setInterval(subSec,1000)
 }
 
-function resetshotclock() {
+function resetShotclock() {
     sec1 = 24
     clearInterval(numInterval1)
     document.querySelector(".shotclock").innerText = sec1
 }
 
-function stopshotclock() {
+function stopShotclock() {
     clearInterval(numInterval1)
 }
 
-function subsec() { 
+function subSec() { 
     sec1--
     if (sec1 > 0) {
         document.querySelector(".shotclock").innerText = sec1
