@@ -35,7 +35,7 @@ function addscore2() {
 }
 
 function subscore2() {
-    if (score > 0) {
+    if (score > 1) {
         score = score - 2
     }
     document.querySelector(".home1").innerText = score
@@ -47,7 +47,7 @@ function addscore3() {
 }
 
 function subscore3() {
-    if (score > 0) {
+    if (score > 2) {
         score = score - 3
     }
     document.querySelector(".home1").innerText = score
@@ -71,7 +71,7 @@ function addscore22() {
 }
 
 function subscore22() {
-    if (score > 0) {
+    if (score > 1) {
         score = score - 2
     }
     document.querySelector(".visitor1").innerText = score
@@ -83,7 +83,7 @@ function addscore33() {
 }
 
 function subscore33() {
-    if (score > 0) {
+    if (score > 2) {
         score = score - 3
     }
     document.querySelector(".visitor1").innerText = score
