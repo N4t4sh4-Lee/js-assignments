@@ -16,6 +16,7 @@ function subPeriod() {
 
 
 let score = 0
+let score1 = 0
 
 function addScore() {
     score++
@@ -54,39 +55,39 @@ function subScore3() {
 }
 
 function addScore1() {
-    score++
-    document.querySelector(".visitor1").innerText = score
+    score1++
+    document.querySelector(".visitor1").innerText = score1
 }
 
 function subScore1() {
-    if (score > 0) {
-        score--
+    if (score1 > 0) {
+        score1--
     }
-    document.querySelector(".visitor1").innerText = score
+    document.querySelector(".visitor1").innerText = score1
 }
 
 function addScore22() {
-    score = score + 2
-    document.querySelector(".visitor1").innerText = score
+    score1 = score1 + 2
+    document.querySelector(".visitor1").innerText = score1
 }
 
 function subScore22() {
-    if (score > 1) {
-        score = score - 2
+    if (score1 > 1) {
+        score1 = score1 - 2
     }
-    document.querySelector(".visitor1").innerText = score
+    document.querySelector(".visitor1").innerText = score1
 }
 
 function addScore33() {
-    score = score + 3
-    document.querySelector(".visitor1").innerText = score
+    score1 = score1 + 3
+    document.querySelector(".visitor1").innerText = score1
 }
 
 function subScore33() {
-    if (score > 2) {
-        score = score - 3
+    if (score1 > 2) {
+        score1 = score1 - 3
     }
-    document.querySelector(".visitor1").innerText = score
+    document.querySelector(".visitor1").innerText = score1
 }
 
 
