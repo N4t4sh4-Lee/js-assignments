@@ -150,6 +150,10 @@ function resetshotclock() {
     document.querySelector(".shotclock").innerText = sec1
 }
 
+function stopshotclock() {
+    clearInterval(numInterval1)
+}
+
 function subsec() { 
     sec1--
     if (sec1 > 0) {
