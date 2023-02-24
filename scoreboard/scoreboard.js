@@ -53,6 +53,42 @@ function subscore3() {
     document.querySelector(".home1").innerText = score
 }
 
+function addscore1() {
+    score++
+    document.querySelector(".visitor1").innerText = score
+}
+
+function subscore1() {
+    if (score > 0) {
+        score--
+    }
+    document.querySelector(".visitor1").innerText = score
+}
+
+function addscore22() {
+    score = score + 2
+    document.querySelector(".visitor1").innerText = score
+}
+
+function subscore22() {
+    if (score > 0) {
+        score = score - 2
+    }
+    document.querySelector(".visitor1").innerText = score
+}
+
+function addscore33() {
+    score = score + 3
+    document.querySelector(".visitor1").innerText = score
+}
+
+function subscore33() {
+    if (score > 0) {
+        score = score - 3
+    }
+    document.querySelector(".visitor1").innerText = score
+}
+
 
 let sec = 60
 let min = 15
