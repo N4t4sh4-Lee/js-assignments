@@ -1,0 +1,53 @@
+.title {
+    text-align: center;
+    font-weight: 700;
+    font-size: 33px;
+    margin-top: 100px;
+}
+
+#accuracyTitle {
+    font-size: 20px;
+}
+
+#wpmTitle {
+    font-size: 20px;
+}
+
+.accuracy {
+    text-align: center;
+    padding: 10px;
+}
+
+.wpm {
+    text-align: center;
+    padding: 10px;
+    padding-left: 30px;
+}
+
+.scores {
+    display: flex;
+    margin-left: 613px;
+}
+
+.analysisOfData {
+    display: flex;
+    margin-left: 390px;
+    margin-top: -60px;
+}
+
+#average {
+    padding: 30px;
+}
+
+#best {
+    padding: 30px;
+}
+
+#latest {
+    padding: 30px;
+}
+
+#catTyping {
+    margin-left: 250px;
+    margin-top: -110px;
+}
