@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Coda:wght@400;800&family=Hind:wght@300;400;500;600;700&family=Marcellus&family=Nanum+Myeongjo:wght@400;700;800&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+* {
+    font-family: 'Titillium Web', sans-serif;
+}
+
+
+#title {
+    text-align: center;
+    margin-top: 100px;
+    font-family: 'Coda', cursive;
+}
+
+#attackRobotDisplay {
+    width: 350px;
+    height: 370px;
+    padding-bottom: 20px;
+    padding-top: 25px;
+    padding-left: 70px;
+}
+
+#defenseRobotDisplay {
+    width: 300px;
+    height: 370px;
+    padding-bottom: 20px;
+    padding-left: 80px;
+}
+
+#healRobotDisplay {
+    width: 330px;
+    height: 320px;
+    padding-bottom: 50px;
+}
+
+#picturesMain {
+    padding-left: 190px;
+    padding-top: 20px;
+}
+
+#healerPage {
+    text-decoration: none;
+    color: black;
+    margin: 130px;
+    background-color: rgb(255, 240, 227);
+    border: 1px solid rgb(255, 203, 157);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#healerPage:hover {
+    text-decoration: none;
+    color: black;
+    margin: 130px;
+    background-color: rgb(255, 239, 239);
+    border: 1px solid rgb(255, 184, 184);
+    padding: 6px;
+    border-radius: 5px;
+}
+
+#defensePage {
+    text-decoration: none;
+    color: black;
+    margin: 130px;
+    background-color: rgb(255, 240, 227);
+    border: 1px solid rgb(255, 203, 157);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#defensePage:hover {
+    text-decoration: none;
+    color: black;
+    margin: 130px;
+    background-color: rgb(255, 239, 239);
+    border: 1px solid rgb(255, 184, 184);
+    padding: 6px;
+    border-radius: 5px;
+}
+
+#attackPage {
+    text-decoration: none;
+    color: black;
+    margin: 130px;
+    background-color: rgb(255, 240, 227);
+    border: 1px solid rgb(255, 203, 157);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#attackPage:hover {
+    text-decoration: none;
+    color: black;
+    margin: 130px;
+    background-color: rgb(255, 239, 239);
+    border: 1px solid rgb(255, 184, 184);
+    padding: 6px;
+    border-radius: 5px;
+}
+
+#linksMain {
+    padding-left: 210px;
+    padding-top: 50px;
+}
+
+#linksMain1 {
+    padding-left: 180px;
+    padding-top: 50px;
+}
+
+
+#title1 {
+    text-align: center;
+    margin-top: 60px;
+    font-family: 'Coda', cursive;
+}
+
+#title2 {
+    text-align: center;
+    margin-top: 60px;
+    font-family: 'Coda', cursive;
+}
+
+#title3 {
+    text-align: center;
+    margin-top: 60px;
+    font-family: 'Coda', cursive;
+}
+
+.healCreate1 {
+    padding-left: 295px;
+}
+
+.attackCreate1 {
+    padding-left: 330px;
+}
+
+.defenseCreate1 {
+    padding-left: 323px;
+}
