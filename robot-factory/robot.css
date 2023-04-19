@@ -125,14 +125,71 @@
     font-family: 'Coda', cursive;
 }
 
-.healCreate1 {
+.healCreate2 {
     padding-left: 295px;
 }
 
-.attackCreate1 {
+.healCreate1 {
+    margin-left: 320px;
+}
+
+.attackCreate2 {
     padding-left: 330px;
 }
 
-.defenseCreate1 {
+.attackCreate1 {
+    padding-left: 360px;
+}
+
+.defenseCreate2 {
     padding-left: 323px;
+}
+
+.defenseCreate1 {
+    padding-left: 350px;
+}
+
+#sizeJs {
+    padding-top: 30px;
+}
+
+#shieldJs {
+    padding-top: 30px;
+}
+
+#weaponJs {
+    padding-top: 30px;
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+    padding-top: 50px;
+}
+
+#img1Js {
+    padding: 20px;
+    padding-right: 30px;
+}
+
+.flex1 {
+    display: flex;
+    flex-direction: row;
+    padding-top: 50px;
+}
+
+#img2Js {
+    padding: 20px;
+    padding-right: 30px;
+}
+
+.flex2 {
+    display: flex;
+    flex-direction: row;
+    padding-top: 50px;
+}
+
+#imgJs {
+    padding: 20px;
+    padding-right: 30px;
 }
