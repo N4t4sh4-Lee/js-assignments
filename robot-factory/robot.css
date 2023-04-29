@@ -153,14 +153,6 @@
     padding-top: 30px;
 }
 
-#shieldJs {
-    padding-top: 30px;
-}
-
-#weaponJs {
-    padding-top: 30px;
-}
-
 .flex {
     display: flex;
     flex-direction: row;
@@ -192,4 +184,9 @@
 #imgJs {
     padding: 20px;
     padding-right: 30px;
+}
+
+.deleteRobot {
+    margin-left: 350px;
+    padding-top: 70px;
 }

@@ -1,6 +1,6 @@
 class HealerRobot {
-    constructor(size, color2, hp2, img2) {
-        this.size = size
+    constructor(name2, color2, hp2, img2) {
+        this.name = name2
         this.color2 = color2
         this.hp2 = hp2
         this.img2 = img2
@@ -24,7 +24,7 @@ if (localStorage.getItem('healArray') == null) {
                     <img id = "img2Js" src='${element.img2}'>
                 </div>
                 <div>
-                    <p id = "sizeJs">Your robot is ${element.size} big</p>
+                    <p id = "nameJs">Your robot is ${element.name}</p>
                     <p id = "color2Js">Your robot is ${element.color2}</p>
                     <p id = "hp2Js">Your robot still has ${element.hp2} hp left</p>
                 </div>
@@ -34,12 +34,12 @@ if (localStorage.getItem('healArray') == null) {
 }
 
 function healCreate() {
-    const sizeData = document.querySelector("#size").value
+    const nameData = document.querySelector("#name").value
     const color2Data = document.querySelector("#color2").value
     const hp2Data = document.querySelector("#hp2").value
     const img2Data = document.querySelector("#img2").value
-    console.log(sizeData, color2Data, hp2Data, img2Data)
-    const healerRobot = new HealerRobot(sizeData, color2Data, hp2Data, img2Data)
+    console.log(nameData, color2Data, hp2Data, img2Data)
+    const healerRobot = new HealerRobot(nameData, color2Data, hp2Data, img2Data)
     healerRobots.push(healerRobot)
 
     const stringHeal = JSON.stringify(healerRobots)
@@ -57,11 +57,42 @@ function healCreate() {
                     <img id = "img2Js" src='${element.img2}'>
                 </div>
                 <div>
-                    <p id = "sizeJs">Your robot is ${element.size} big</p>
+                    <p id = "nameJs">The name of your robot is ${element.name}</p>
                     <p id = "color2Js">Your robot is ${element.color2}</p>
                     <p id = "hp2Js">Your robot still has ${element.hp2} hp left</p>
                 </div>
             </div>
         `
     })
+}
+
+function deleteRobot() {
+    const filteredHealerRobots = healerRobots.filter(function(element) {
+        const filteredData = document.querySelector("#name1").value
+        return element.name !== filteredData 
+    })
+
+    document.querySelector('.healCreate1').innerHTML = ``
+
+    filteredHealerRobots.forEach(function(element){
+        console.log(convertHeal[0])
+
+        document.querySelector('.healCreate1').innerHTML += `
+            <div class="flex1">
+                <div>
+                    <img id = "img2Js" src='${element.img2}'>
+                </div>
+                <div>
+                    <p id = "nameJs">The name of your robot is ${element.name}</p>
+                    <p id = "color2Js">Your robot is ${element.color2}</p>
+                    <p id = "hp2Js">Your robot still has ${element.hp2} hp left</p>
+                </div>
+            </div>
+        `
+    })  
+    
+    healerRobots = filteredHealerRobots
+
+    const stringFilteredHeal = JSON.stringify(filteredHealerRobots)
+    localStorage.setItem('healArray', stringFilteredHeal)
 }

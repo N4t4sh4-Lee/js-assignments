@@ -1,7 +1,7 @@
 class AttackRobot {
-    constructor(weapon, color, hp, img) {
+    constructor(name, weapon, hp, img) {
         this.weapon = weapon
-        this.color = color
+        this.name = name
         this.hp = hp
         this.img = img
     }
@@ -25,8 +25,8 @@ if (localStorage.getItem('attackArray') == null) {
                     <img id = "imgJs" src='${element.img}'>
                 </div>
                 <div>
+                    <p id = "nameJs">Your robot is ${element.name}</p>
                     <p id = "weaponJs">Your robot has a ${element.weapon} as a weapon</p>
-                    <p id = "colorJs">Your robot is ${element.color}</p>
                     <p id = "hpJs">Your robot still has ${element.hp} hp left</p>    
                 </div>
             </div>
@@ -35,12 +35,12 @@ if (localStorage.getItem('attackArray') == null) {
 }
 
 function attackCreate() {
+    const nameData = document.querySelector("#name").value
     const weaponData = document.querySelector("#weapon").value
-    const colorData = document.querySelector("#color").value
     const hpData = document.querySelector("#hp").value
     const imgData = document.querySelector("#img").value
-    console.log(weaponData, colorData, hpData, imgData)
-    const attackRobot = new AttackRobot(weaponData, colorData, hpData, imgData)
+    console.log(nameData, weaponData, hpData, imgData)
+    const attackRobot = new AttackRobot(nameData, weaponData, hpData, imgData)
     attackRobots.push(attackRobot)
 
     const stringAttack = JSON.stringify(attackRobots)
@@ -58,11 +58,41 @@ function attackCreate() {
                     <img id = "imgJs" src='${element.img}'>
                 </div>
                 <div>
+                    <p id = "nameJs">Your robot is ${element.name}</p>
                     <p id = "weaponJs">Your robot has a ${element.weapon} as a weapon</p>
-                    <p id = "colorJs">Your robot is ${element.color}</p>
                     <p id = "hpJs">Your robot still has ${element.hp} hp left</p>    
                 </div>
             </div>
         `
     })
+}
+
+function deleteRobot() {
+    const filteredAttackRobots = attackRobots.filter(function(element) {
+        const filteredData = document.querySelector("#name1").value
+        return element.name !== filteredData
+    })
+    
+    document.querySelector('.attackCreate1').innerHTML = ``
+
+    filteredAttackRobots.forEach(function(element){
+        console.log(convertAttack[0])
+
+        document.querySelector('.attackCreate1').innerHTML += `
+        <div class="flex2">
+            <div>
+                <img id = "imgJs" src='${element.img}'>
+            </div>
+            <div>
+                <p id = "nameJs">Your robot is ${element.name}</p>
+                <p id = "weaponJs">Your robot has a ${element.weapon} as a weapon</p>
+                <p id = "hpJs">Your robot still has ${element.hp} hp left</p>    
+            </div>
+        </div>
+        `
+    })   
+
+    attackRobots = filteredAttackRobots 
+    const stringFilteredAttack = JSON.stringify(filteredAttackRobots)
+    localStorage.setItem('attackArray', stringFilteredAttack)
 }
