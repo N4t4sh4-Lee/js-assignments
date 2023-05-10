@@ -1,0 +1,81 @@
+#audio1pic {
+    height: 200px;
+    width: 200px;
+}
+
+#audio2pic {
+    height: 200px;
+    width: 200px;
+}
+
+#audio3pic {
+    height: 200px;
+    width: 200px;
+}
+
+#song1flex {
+    display: flex;
+    flex-direction: row;
+}
+
+#song1textflex {
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+    padding-top: 20px;
+}
+
+#buttons {
+    padding: 20px;
+}
+
+#song2flex {
+    display: flex;
+    flex-direction: row;
+}
+
+#song2textflex {
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+    padding-top: 20px;
+}
+
+#buttons1 {
+    padding: 20px;
+}
+
+#song3flex {
+    display: flex;
+    flex-direction: row;
+}
+
+#song3textflex {
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+    padding-top: 20px;
+}
+
+#buttons2 {
+    padding: 20px;
+}
+
+.song1 {
+    padding-top: 30px;
+    padding-left: 530px;
+}
+
+.song2 {
+    padding-top: 40px;
+    padding-left: 530px;
+}
+
+.song3 {
+    padding-top: 40px;
+    padding-left: 530px;
+}
+
+.title {
+    text-align: center;
+}
