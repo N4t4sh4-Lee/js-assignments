@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="robot.css">
+    <title>Robots</title>
+</head>
+
+<body>
+    <div id="linksMain1">
+        <a href="heal.html" id="healerPage">Healer Robot</a> 
+        <a href="defense.html" id="defensePage">Defense Robot</a> 
+        <a href="attack.html" id="attackPage">Attack Robot</a> 
+    </div>
+
+    <h1 id="title3" >• Build Your Healer Robot •</h1>
+    
+    <div class = "healCreate2">
+        <label for="buildRobot">Build your healer robot:</label>
+        <input id = "name" type = "text" placeholder = "name">
+        
+        <input id = "color2" type = "text" placeholder = "color">
+    
+        <input id = "hp2" type = "text" placeholder = "hp (numerical)">
+    
+        <input id = "img2" type = "text" placeholder = "image address link">
+    
+        <button onclick = "healCreate()">Create my healer robot!</button>    
+    </div>
+
+    <div class = "healCreate1"></div>
+
+    <div class = "deleteRobot">
+        <label for="removeRobot">Remove robots:</label>
+        <input id = "name1" type = "text" placeholder = "name">
+            
+        <button onclick = "deleteRobot()">Delete my robot</button>    
+    </div>
+    
+    <script src="robot.js"></script>
+</body>
+</html>

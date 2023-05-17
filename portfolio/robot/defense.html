@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="robot.css">
+    <title>Robots</title>
+</head>
+
+<body>
+    <div id="linksMain1">
+        <a href="heal.html" id="healerPage">Healer Robot</a> 
+        <a href="defense.html" id="defensePage">Defense Robot</a> 
+        <a href="attack.html" id="attackPage">Attack Robot</a> 
+    </div>
+
+    <h1 id="title2" >• Build Your Defense Robot •</h1>
+
+    <div class = "defenseCreate2">
+        <label for="buildRobot1">Build your defense robot:</label>
+        
+        <input id = "name" type = "text" placeholder = "name">
+
+        <select id="shield" name="shield">
+            <option value="none">N/A</option>
+            <option value="metal">metal</option>
+            <option value="wood">wood</option>
+            <option value="energy">an energy shield</option>
+        </select>  
+        
+        <input id = "hp1" type = "text" placeholder = "hp (numerical)">
+    
+        <input id = "img1" type = "text" placeholder = "image address link">
+    
+        <button onclick = "defenseCreate()">Create my defense robot!</button>    
+    </div>
+    
+    <div class = "defenseCreate1"></div>
+
+    <div class = "deleteRobot">
+        <label for="removeRobot">Remove robots:</label>
+        <input id = "name1" type = "text" placeholder = "name">
+            
+        <button onclick = "deleteRobot()">Delete my robot</button>    
+    </div>
+
+    <script src="robot1.js"></script>
+</body>
+</html>

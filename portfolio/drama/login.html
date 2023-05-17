@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Drama Site</title>
+    <link rel="stylesheet" href="drama.css">
+</head>
+
+<body>
+    <div class="login">
+        <div id="grid1">
+            <img src="drama-site-imgs/profile-pic.jpg" id="profpic">
+            <h2 id="jung">jung05</h2>
+            <p id="profset">Profile Settings</p>
+            <p id="fav">Favorites</p>
+            <p id="watchlist">To Watch List</p>
+            <p id="finished">Finished Watching</p>
+            <p id="browse1">Browse</p>
+            <a href="drama.html" id="logout">Log Out</a>
+        </div>
+        <div class="box">
+            <div id="box2">
+                <div id="grid2">
+                    <h2 id="cont">Continue...</h2>
+                    <img src="drama-site-imgs/movie7.jpg" id="movie7">
+                    <h2 id="okay">It's Okay to Not Be Okay</h2>
+                    <p id="a2020">2020</p>
+                    <p id="p1">Moon Gang Tae is a commuity health worker at <br>a psychiatric ward who was blessed with <br>everything including a great body, smarts, ability <br>to sympathize with others, patience, ability to <br>react quickly, stamina, and more...</p>
+                </div>
+                <div id="grid3">
+                    <h2 id="onlinefr">Online Friends</h2>
+                    <img src="drama-site-imgs/friend1.jpg" id="friend1">
+                    <p id="sumin">sumin86</p>
+                    <p id="watching1">Watching: Navilerra</p>
+                    <img src="drama-site-imgs/friend2.jpg" id="friend2">
+                    <p id="paek">paekhyeeee</p>
+                    <p id="watching2">Watching: Hospital Playlist</p>
+                    <img src="drama-site-imgs/friend3.jpg" id="friend3">
+                    <p id="maple">34maple</p>
+                    <p id="watching3">Watching: Signal</p>
+                </div>
+            </div>
+            <div id="grid4">
+                <h2 id="rec">Recommendations</h2>
+                <img src="drama-site-imgs/movie4.jpg" id="movie4" width="130" height="180">
+                <h2 id="queen">Mr. Queen</h2>
+                <p id="a2022">2022</p>
+                <p id="p2">Jang Bong Hwan is a South Korean chef who <br>has risen up the ranks to cook for the country's <br>top politicians in the Blue House's presidential <br>residences. Ever the dreamer, he finds himself in <br>the body of the young...</p>
+                <img src="drama-site-imgs/movie6.jpg" id="movie6" width="130" height="180">
+                <h2 id="reply">Reply 1988</h2>
+                <p id="a2015">2015</p>
+                <p id="p3">Five childhood friends, who all live in the same <br>Ssanmundong neighborhood of Seoul, lean on <br>each other to survive their challenging teen <br>years and set a path for hteir futures. Sung Deok <br>Sun struggles for attention...</p>
+                <img src="drama-site-imgs/movie5.jpg" id="movie5" width="130" height="180">
+                <h2 id="prison">Prison Playbook</h2>
+                <p id="a2070">2070</p>
+                <p id="p4">King Je Hyuk, a famous basketball player, is <br>arrested after using excessive force while <br>chasing a man trying to sexually assult his <br>sister. Shockingly to him and the rest of the <br>nation, he is sentenced to a year in prison...</p>
+            </div>
+    
+        </div>
+    </div>
+</body>
+</html>
+
+<style>
+    * {
+        color: rgb(255, 255, 255);
+    }
+
+    #grid1 {
+        display: grid; 
+        background-color: rgb(255, 149, 150);
+        width: 400px;
+        height: 758px;
+        margin-left: 50px;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "profpic"
+        "jung"
+        "profset"
+        "fav"
+        "watchlist"
+        "finished"
+        "browse1"
+        "logout"
+        ;
+    }
+
+    #profpic {
+        width: 200px;
+        height: 200px;
+        margin: auto;
+        margin-top: 80px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    #jung {
+        margin-left: 163px;
+        font-weight: 500;
+        font-size: 24px;
+    }
+
+    #profset {
+        margin: auto;
+        margin-top: -20px;
+        color: rgb(255, 231, 231);
+        font-weight: 100;
+        font-size: 12px;
+    }
+
+    #fav {
+        margin-left: 100px;
+        margin-top: -20px;
+        font-weight: 200;
+        font-size: 17px;
+    }
+
+    #watchlist {
+        margin-left: 100px;
+        margin-top: -60px;
+        font-weight: 200;
+        font-size: 17px;
+    }
+
+    #finished {
+        margin-left: 100px;
+        margin-top: -100px;
+        font-weight: 200;
+        font-size: 17px;
+    }
+
+    #browse1 {
+        margin-left: 100px;
+        margin-top: -140px;
+        font-weight: 200;
+        font-size: 17px;
+    }
+
+    #logout {
+        margin-left: 100px;
+        margin-top: -30px;
+        font-size: 17px;
+        font-weight: 600;
+        text-decoration: none;
+    }
+
+    .box {
+        display: flex;
+        width: 970px;
+        height: 760px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        background-color: black;
+        margin-left: 450px;
+        margin-top: -760px;
+    }
+
+    #grid2 {
+        display:grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "cont"
+        "movie7"
+        "okay"
+        "a2020"
+        "p1"
+    }
+
+    #cont {
+        grid-area: cont;
+        font-weight: 200;
+        font-size: 20px;
+    }
+
+    #movie7 {
+        grid-area: movie7;
+        width: 130px;
+        height: 180px;
+    }
+
+    #okay {
+        grid-area: okay;
+        font-weight: 400;
+        font-size: 16px;
+        margin-left: 170px;
+        margin-top: -160px;
+    }
+
+    #a2020 {
+        grid-area: a2020;
+        font-weight: 100;
+        font-size: 11px;
+        margin-left: 170px;
+        margin-top: -130px;
+        color: rgb(215, 215, 215);
+    }
+
+    #p1 {
+        grid-area: p1;
+        font-weight: 100;
+        font-size: 11px;
+        margin-left: 170px;
+        margin-top: -110px;
+        color: rgb(215, 215, 215);
+    }
+
+    #onlinefr {
+        font-weight: 200;
+        font-size: 20px;
+        margin-top: 40px;
+        margin-left: 10px;
+    }
+
+    #friend1 {
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-left: 10px;
+    }
+    
+    #sumin {
+        font-weight: 600;
+        margin-left: 130px;
+        margin-top: -70px;
+    }
+
+    #watching1 {
+        font-weight: 200;
+        font-size: 14px;
+        margin-left: 130px;
+        margin-top: -10px;
+    }
+
+    #friend2 {
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-left: 10px;
+        margin-top: 30px;
+    }
+
+    #paek {
+        font-weight: 600;
+        margin-left: 130px;
+        margin-top: -70px;
+    }
+
+    #watching2 {
+        font-weight: 200;
+        font-size: 14px;
+        margin-left: 130px;
+        margin-top: -10px;
+    }
+
+    #friend3 {
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-left: 10px;
+        margin-top: 30px;
+    }
+
+    #maple {
+        font-weight: 600;
+        margin-left: 130px;
+        margin-top: -70px;
+    }
+
+    #watching3 {
+        font-weight: 200;
+        font-size: 14px;
+        margin-left: 130px;
+        margin-top: -10px;
+    }
+
+    #rec {
+        grid-area: cont;
+        font-weight: 200;
+        font-size: 20px;
+        margin-top: -3px;
+    }
+
+    #queen {
+        grid-area: okay;
+        font-weight: 400;
+        font-size: 16px;
+        margin-left: 170px;
+        margin-top: -160px;
+    }
+
+    #a2022 {
+        grid-area: a2020;
+        font-weight: 100;
+        font-size: 11px;
+        margin-left: 170px;
+        color: rgb(215, 215, 215);
+    }
+
+    #p2 {
+        grid-area: p1;
+        font-weight: 100;
+        font-size: 11px;
+        margin-left: 170px;
+        color: rgb(215, 215, 215);
+    }
+
+    #movie6 {
+        margin-top: 30px;
+    }
+
+    #reply {
+        grid-area: okay;
+        font-weight: 400;
+        font-size: 16px;
+        margin-left: 170px;
+        margin-top: -170px;
+    }
+
+    #a2015 {
+        grid-area: a2020;
+        font-weight: 100;
+        font-size: 11px;
+        margin-left: 170px;
+        color: rgb(215, 215, 215);
+    }
+
+    #p3 {
+        grid-area: p1;
+        font-weight: 100;
+        font-size: 11px;
+        margin-left: 170px;
+        color: rgb(215, 215, 215);
+    }
+
+    #movie5 {
+        margin-top: 40px;
+    }
+
+    #prison {
+        grid-area: okay;
+        font-weight: 400;
+        font-size: 16px;
+        margin-left: 170px;
+        margin-top: -170px;
+    }
+
+    #a2070 {
+        grid-area: a2020;
+        font-weight: 100;
+        font-size: 11px;
+        margin-left: 170px;
+        color: rgb(215, 215, 215);
+    }
+
+    #p4 {
+        grid-area: p1;
+        font-weight: 100;
+        font-size: 11px;
+        margin-left: 170px;
+        color: rgb(215, 215, 215);
+    }
+</style>

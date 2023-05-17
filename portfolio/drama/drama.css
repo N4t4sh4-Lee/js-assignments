@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap');
+* {
+    font-family: 'Nunito', sans-serif;
+}
+
+body {
+    margin: 0px;
+}
+
+.title1 {
+    display: grid;
+    grid-template-rows: 1fr 1fr 2fr;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "subtitle"
+    "maintitle"
+    "titledesc"
+    ;
+    background-image: url("drama-site-imgs/main-splash.jpg");
+    margin-left: 45px;
+    padding-right: 280px;
+    padding-left: 280px;
+    width: 800px;
+    height: 900px;
+}
+
+.subtitle1 {
+    display: flex;
+    grid-area: subtitle;
+    justify-content: space-evenly;
+    margin-left: 690px;
+    margin-top: 20px;
+    width: 360px;
+}
+
+#maintitle {
+    grid-area: maintitle;
+    font-size: 45px;
+    margin-top: 500px;
+    margin-left: -170px;
+    color: rgb(255, 255, 255);
+}
+
+#browse {
+    display: flex;
+    grid-area: browse;
+    flex-direction: row;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    background-color: transparent;
+    color: rgb(203, 203, 203);
+    margin-top: 30px;
+    font-weight: 500;
+    font-size: 25px;
+}
+
+#login {
+    display: flex;
+    grid-area: login;
+    flex-direction: row;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    background-color: transparent;
+    color: rgb(203, 203, 203);
+    margin-left: 30px;
+    margin-right: 10px;
+    margin-top: 30px;
+    font-weight: 500;
+    font-size: 25px;
+    text-decoration: none;
+}
+
+#signup {
+    display: flex;
+    grid-area: signup;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    background-color: rgb(255, 179, 193);
+    color: rgb(255, 255, 255);
+    margin-left: 30px;
+    margin: 20px;
+    padding: 10px;        
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 25px;
+    text-decoration: none;
+}
+
+#titledesc {
+    grid-area: titledesc;
+    margin-top: 0px;
+    color: rgb(255, 255, 255);
+    margin-left: -170px;
+    font-weight: 100;
+}
+
+.choices {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: black;
+    justify-content: space-evenly;
+    align-content: center;
+    width: 1260px;
+    height: 680px;
+    margin-top: 75px;
+    margin-left: -280px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+#movie1 {
+    position: relative;
+    transition: 1s;
+    opacity: 1;
+}
+
+#movie1:hover {
+    opacity: 0;
+}
+
+#overlay1 {
+    margin-left: -415px;
+    position: relative;
+    opacity: 0;
+    transition: 1s;
+    padding-top: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+#overlay1:hover {
+    opacity: 1;
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.292);
+}
+
+#watchnow1 {
+    display: flex;
+    width: 200px;
+    background-color: rgb(255, 179, 193);
+    color: rgb(255, 255, 255);
+    margin-left: 65px;
+    margin-top: 180px;
+    align-self: flex-end;
+    padding: 10px;        
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 5px;
+    font-weight: 500;
+    justify-content: center;
+}
+
+#movie2 {
+    position: relative;
+    transition: 1s;
+    opacity: 1;
+}
+
+#movie2:hover {
+    opacity: 0;
+}
+
+#overlay2 {
+    margin-left: -415px;
+    position: relative;
+    opacity: 0;
+    transition: 1s;
+    padding-top: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+#overlay2:hover {
+    opacity: 1;
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.292);
+}
+
+#watchnow2 {
+    display: flex;
+    width: 200px;
+    background-color: rgb(255, 179, 193);
+    color: rgb(255, 255, 255);
+    margin-left: 65px;
+    margin-top: 180px;
+    align-self: flex-end;
+    padding: 10px;        
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 5px;
+    font-weight: 500;
+    justify-content: center;
+}
+
+#movie3 {
+    position: relative;
+    transition: 1s;
+    opacity: 1;
+}
+
+#movie3:hover {
+    opacity: 0;
+}
+
+#overlay3 {
+    margin-left: -415px;
+    position: relative;
+    opacity: 0;
+    transition: 1s;
+    padding-top: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+#overlay3:hover {
+    opacity: 1;
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.292);
+}
+
+#watchnow3 {
+    display: flex;
+    width: 200px;
+    background-color: rgb(255, 179, 193);
+    color: rgb(255, 255, 255);
+    margin-left: 65px;
+    margin-top: 180px;
+    align-self: flex-end;
+    padding: 10px;        
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 5px;
+    font-weight: 500;
+    justify-content: center;
+}
+
+.signupsplashmain {
+    margin-top: 675px;
+}
+
+#signupsplash {
+    margin-left: 45px;
+    margin-top: 1000;
+}
+
+#signupbutton {
+    display: flex;
+    position: relative;
+    width: 200px;
+    background-color: rgb(255, 179, 193);
+    color: rgb(255, 255, 255);
+    margin-left: 200px;
+    margin-top: -525px;
+    align-self: flex-start;
+    padding: 10px;        
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 45px;
+    justify-content: center;
+    z-index: 1;
+    text-decoration: none;
+
+}
+
+#signupbutton:hover {
+    display: flex;
+    position: relative;
+    width: 200px;
+    background-color: rgb(255, 197, 207);
+    color: rgb(255, 255, 255);
+    margin-left: 200px;
+    margin-top: -525px;
+    align-self: flex-start;
+    padding: 10px;        
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 45px;
+    justify-content: center;
+    z-index: 1;
+    text-decoration: none;
+}
+
+#promotion {
+    color: rgb(255, 255, 255);
+    margin-left: 200px;
+    font-size: 45px;
+}
+
+#education {
+    width: 280px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    margin-left: 45px;
+    margin-right: 0x;
+    margin-top: 220px;
+    margin-bottom: 0px;
+    padding: 60px;        
+    padding-left: 540px;
+    padding-right: 540px;
+    font-size: 20px;
+}

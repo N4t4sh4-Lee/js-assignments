@@ -1,0 +1,710 @@
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&family=Nanum+Myeongjo:wght@400;700;800&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+* {
+    font-family: 'Spectral', serif;
+}
+
+.menu {
+    background-color: rgb(204, 214, 166);
+    padding: 20px;
+}
+
+#name {
+    color: black;
+    margin-left: 30px;
+    font-size: 20px;
+}
+
+#icj {
+    color: black;
+    margin-left: 990px;
+    margin-right: 20px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+#icj:hover {
+    color: rgb(218, 226, 182);
+}
+
+#about {
+    color: black;
+    margin-right: 20px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+#about:hover {
+    color: rgb(218, 226, 182);
+}
+
+#portfolio {
+    color: black;
+    margin-right: 20px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+#portfolio:hover {
+    color: rgb(218, 226, 182);
+}
+
+#home {
+    color: black;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+#home:hover {
+    color: rgb(218, 226, 182);
+}
+
+.homemain {
+    display:flex;
+    flex-direction: row;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 1454px;
+    height: 518px;
+    justify-content: space-evenly;
+    align-content: center;
+    flex-wrap: wrap;
+    background-color: rgb(247, 237, 219);
+}
+
+#ladybugski {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    margin-top: -415px;
+    margin-left: 1150px;
+    animation: ladybugskianimation;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes ladybugskianimation {
+    25% {
+        transform: rotate(0turn);
+    }
+    50% {
+        transform: translateX(-1000px);
+    }
+    75% {
+        transform: rotate(0.2turn);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+#about1 {
+    margin-left: 400px;
+    margin-right: 400px;
+    margin-bottom: 20px;
+    padding-right: 400px;
+    padding-bottom: 40px;
+    background-image: url(https://lp-cms-production.imgix.net/2021-05/GettyRF_462144413.jpg);
+    background-size: cover;
+    background-position-y: 20%;
+}
+
+#abouttext {
+    background-color: rgb(218, 226, 182);
+    padding-top: 50px;
+    padding-left: 20px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+#p1 {
+    background-color: rgb(218, 226, 182);
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    padding-left: 20px;
+}
+
+#clickme {
+    background-color: rgb(218, 226, 182);
+    color:rgb(166, 177, 123);
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-bottom: 40px;
+    padding-left: 20px;
+    padding-right: 60px;
+    margin-left: 0px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+#clickme:hover {
+    color: rgb(247, 237, 219);
+}
+
+#icj1 {
+    padding-left: 375px;
+    padding-bottom: 15px;
+    background-image: url(https://media.istockphoto.com/id/1090431444/photo/judge-gavel-and-scale-in-court-legal-concept.jpg?s=612x612&w=0&k=20&c=J8Xo47BvPlo1Y4l4Cia3IBVzE699dLd73_QDFWVifts=);
+    background-size: cover;
+    background-position: 35%;
+}
+
+#icjtext {
+    text-align: end;
+    background-color: rgb(218, 226, 182);
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+
+}
+
+#p2 {
+    text-align: end;
+    background-color: rgb(218, 226, 182);
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    padding-right: 20px;
+
+}
+
+#clickme1 {
+    text-align: end;
+    background-color: rgb(218, 226, 182);
+    color:rgb(166, 177, 123);
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    padding-right: 20px;
+    padding-left: 80px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+#clickme1:hover {
+    color: rgb(247, 237, 219);
+}
+
+#portfolio1 {
+    padding-left: 375px;
+    padding-bottom: 15px;
+    background-image: url(https://d1y8sb8igg2f8e.cloudfront.net/images/shutterstock_736294369.2e16d0ba.fill-1600x775.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#portfoliotext {
+    text-align: end;
+    background-color: rgb(218, 226, 182);
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 40px;
+    padding-bottom: 17px;
+    padding-right: 20px;
+}
+
+#p3 {
+    text-align: end;
+    background-color: rgb(218, 226, 182);
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    padding-right: 20px;
+
+}
+
+#clickme2 {
+    text-align: end;
+    background-color: rgb(218, 226, 182);
+    color:rgb(166, 177, 123);
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 20px;
+    padding-bottom: 23px;
+    padding-right: 20px;
+    padding-left: 60px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+#clickme2:hover {
+    color: rgb(247, 237, 219);
+}
+
+#footer {
+    color: white;
+    background-color: rgb(204, 214, 166);
+    padding: 15px;
+    padding-left: 650px;
+}
+
+.homemain1 {
+    display:flex;
+    flex-direction: column;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    margin: 0px;
+    width: 1454px;
+    height: 500px;
+    justify-content: space-evenly;
+    align-content: center;
+    flex-wrap: wrap;
+    background-color:rgb(247, 237, 219);
+}
+
+#avatar{
+    background-color: rgb(223, 232, 204);
+    border-radius: 50%;
+    margin-right: 40px;
+}
+
+#aboutbody {
+    background-color: rgb(223, 232, 204);
+    padding-top: 50px;
+    padding-bottom: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 10%;
+    margin-bottom: 60px;
+    margin-top: 60px;
+    margin-left: 30px;
+    font-size: 20px;
+}
+
+#ladybugsleep {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    margin-left: 700px;
+    margin-top: -475px;
+    animation: ladybugsleepanimation;
+    animation-fill-mode: forwards;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes ladybugsleepanimation {
+    from {
+        transform: none;
+    }
+    to {
+        transform: scale(1, 0.9);
+    }
+}
+
+#ladybug {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    margin-left: 1300px;
+    margin-top: -100px;
+    animation: ladybuganimation;
+    animation-fill-mode: forwards;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+}
+
+@keyframes ladybuganimation {
+    from {
+        transform: none;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+#portfoliomain {
+    display:flex;
+    flex-direction: column;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+#drama {
+    background-color: rgb(223, 232, 204);
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 15px;
+    padding-left: 63px;
+    padding-right: 63px;
+    padding-bottom: 10px;
+}
+
+#dramaimg {
+    width: 300px;
+    height: 160px;
+}
+
+#dramalink {
+    background-color: rgb(223, 232, 204);
+    color:rgb(166, 177, 123);
+    margin-top: 0px;
+    padding-left: 80px;
+    padding-right: 79px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+#dramalink:hover {
+    color: rgb(205, 211, 179);
+}
+
+#portfoliodesc1 {
+    background-color: rgb(223, 232, 204);
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 10px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+}
+
+#portfoliomain1 {
+    display:flex;
+    flex-direction: column;
+}
+
+#portfoliomain2 {
+    display:flex;
+    flex-direction: column;
+}
+
+#row1 {
+    display: flex;
+    flex-direction: row;
+    width: 1454px;
+    height: 570px;
+    justify-content: space-evenly;
+    align-content: center;
+    flex-wrap: wrap;
+    background-color:rgb(247, 237, 219);
+}
+
+#dramaimg1 {
+    margin-left: 40px;
+    margin-bottom: 0px;
+    width: 300px;
+    height: 160px;
+}
+
+#drama1 {
+    background-color: rgb(223, 232, 204);
+    margin-left: 40px;
+    padding-top: 15px;
+    padding-left: 71px;
+    padding-right: 71px;
+    padding-bottom: 10px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+
+}
+
+#dramalink1 {
+    background-color: rgb(223, 232, 204);
+    color:rgb(166, 177, 123);
+    margin-left: 40px;
+    padding-left: 80px;
+    padding-right: 79px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-decoration: none;
+    margin-bottom: 0px;
+    transition: 0.3s;
+}
+
+#dramalink1:hover {
+    color: rgb(205, 211, 179);
+}
+
+#portfoliodesc2 {
+    background-color: rgb(223, 232, 204);
+    margin-left: 40px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 10px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+#dramaimg2 {
+    margin-left: 40px;
+    margin-bottom: 0px;
+    width: 300px;
+    height: 160px;
+}
+
+#drama2 {
+    background-color: rgb(223, 232, 204);
+    margin-left: 40px;
+    padding-top: 15px;
+    padding-left: 93px;
+    padding-right: 93px;
+    padding-bottom: 10px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+#dramalink2 {
+    background-color: rgb(223, 232, 204);
+    color:rgb(166, 177, 123);
+    margin-left: 40px;
+    padding-left: 80px;
+    padding-right: 79px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-decoration: none;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    transition: 0.3s;
+}
+
+#dramalink2:hover {
+    color: rgb(205, 211, 179);
+}
+
+#portfoliodesc3 {
+    background-color: rgb(223, 232, 204);
+    margin-left: 40px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 10px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+
+
+
+
+
+
+
+.icjmain {
+    display:flex;
+    padding-top: 50px;
+    padding-bottom: 15px;
+    width: 1454px;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    background-color: rgb(247, 237, 219);
+}
+
+#case1 {
+    background-image: url(https://img.jagranjosh.com/images/2022/December/6122022/sahara-desert.jpg);
+    background-size: cover;
+    background-position-y: 20%;
+    height: 330px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#ongwen{
+    font-size: 20px;
+}
+
+#ongwenpic {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-left: 123px;
+}
+
+#case1p {
+    width: fit-content;
+    margin-top: -180px;
+    margin-left: 380px;
+}
+
+#clickme4 {
+    color: black;
+    text-decoration: none;
+    padding-top: 50px;
+    margin-left: 400px;
+    transition: 0.3s;
+}
+
+#clickme4:hover {
+    color: rgb(218, 226, 182);
+}
+
+#case2 {
+    background-image: url(https://ichef.bbci.co.uk/news/1024/branded_news/1015B/production/_126338856_himars4.png);
+    background-size: cover;
+    background-position-y: 70%;
+    height: 310px;
+    padding-left: 37px;
+    padding-right: 37px;
+}
+
+#ukraine{
+    font-size: 20px;
+}
+
+#zelenskypic {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-left: 102px;
+}
+
+#case2p {
+    width: fit-content;
+    margin-top: -160px;
+    margin-left: 365px; 
+}
+
+#case3 {
+    background-image: url(https://gmcg.global/wp-content/uploads/2021/08/news18-scaled-1.jpg);
+    background-size: cover;
+    background-position-y: 65%;
+    height: 300px;
+    width: 1280px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+#chileperu{
+    font-size: 20px;
+    text-align: center;
+}
+
+#chileperupic {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-left: 100px;
+}
+
+#case3p {
+    width: fit-content;
+    margin-top: -160px;
+    margin-left: 365px; 
+}
+
+#clickme5 {
+    color: black;
+    text-decoration: none;
+    padding-top: 50px;
+    margin-left: 380px;
+    transition: 0.3s;
+}
+
+#clickme5:hover {
+    color: rgb(218, 226, 182);
+}
+
+#case3 {
+    background-image: url(https://gmcg.global/wp-content/uploads/2021/08/news18-scaled-1.jpg);
+    background-size: cover;
+    background-position-y: 65%;
+    height: 300px;
+    width: 1280px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+#japanaus{
+    font-size: 20px;
+    text-align: center;
+}
+
+#japanauspic {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-left: 100px;
+}
+
+#case4p {
+    width: fit-content;
+    margin-top: -160px;
+    margin-left: 365px; 
+}
+
+#clickme6 {
+    color: black;
+    text-decoration: none;
+    padding-top: 50px;
+    margin-left: 380px;
+    transition: 0.3s;
+}
+
+#clickme6:hover {
+    color: rgb(218, 226, 182);
+}
+
+#case4 {
+    background-image: url(https://www.shutterstock.com/image-photo/beauty-sunrise-antarctica-colourful-sky-260nw-713498239.jpg);
+    background-size: cover;
+    background-position-y: 65%;
+    height: 300px;
+    width: 1280px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+#ladybugski1 {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    margin-top: -1065px;
+    margin-left: -120px;
+    animation: ladybugski1animation;
+    animation-fill-mode: forwards;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes ladybugski1animation {
+    from {
+        transform: none;
+    }
+    to {
+        transform: translatex(1700px);
+    }
+}
+
+#play {
+    margin: 10px;
+    margin-left: 30px;
+    margin-right: 7px;
+    padding-left: 7px;
+    padding-right: 7px;
+    border-radius: 50%;
+    border-width: 1px;
+}
+
+#stop {
+    margin: 10px;
+    margin-left: 0px;
+    padding-left: 7px;
+    padding-right: 7px;
+    border-radius: 50%;
+    border-width: 1px;
+}
+
+#music {
+    background-color: rgb(247, 237, 219);
+    padding-bottom: 5px;
+}

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Drama Site</title>
+    <link rel="stylesheet" href="drama.css">
+</head>
+
+<body>
+    <div id="main">
+        <div id="blurimg"><img src="drama-site-imgs/movie9.jpg" width="530" height="757"></div>
+        <div id="signup">
+            <h1>Sign Up</h1>
+            <p id="username">username</p>
+            <input type="text" id="box1">
+            <p id="email">email</p>
+            <p id="box2">box</p>
+            <input type="text" id="box2">
+            <p id="birthday">birthday</p>
+            <input type="date" id="box3">
+            <button id="signupbutton1">Sign Up</button>
+            <a href="login.html" id="signupbutton1">Sign Up</a>
+        </div>
+    </div>
+</body>
+</html>
+
+<style>
+    body {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    #main {
+        margin: 0px;
+        display: flex;
+    }
+
+    #blurimg {
+        margin-left: 50px;
+        margin-bottom: 0px;
+    }
+
+    #signup{
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "signupwords"
+        "username"
+        "box1"
+        "email"
+        "box2"
+        "birthday"
+        "box3"
+        "signupbutton"
+        ;
+        margin-left: 0px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        border-radius: 0;
+        background-color: black;
+        width: 800px;
+        height: 737px;
+    }
+
+    h1 {
+        display: flex;
+        grid-area: signupwords;
+        margin-left: 150px;
+        margin-top: 100px;
+    }
+
+    #username {
+        display: flex;
+        grid-area: username;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        padding-left: 150px;        
+        margin: 5px;
+        font-weight: 200;
+        font-size: 17px;
+        text-decoration: none;
+    }
+
+    #box1 {
+        display: flex;
+        grid-area: box1;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        width: 400px;
+        background-color: rgb(255, 255, 255);
+        color: rgb(255, 255, 255);
+        margin: 150px;
+        margin-top: -30px;
+        margin-bottom: 60px;
+        padding: 5px;
+        border-radius: 5px;
+        font-weight: 500;
+        font-size: 17px;
+        text-decoration: none;
+    }
+
+    #email {
+        display: flex;
+        grid-area: email;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        padding-left: 150px;        
+        margin: 5px;
+        margin-top: -40px;
+        font-weight: 200;
+        font-size: 17px;
+        text-decoration: none;
+    }
+
+    #box2 {
+        display: flex;
+        grid-area: box2;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        width: 400px;
+        background-color: rgb(255, 255, 255);
+        color: rgb(255, 255, 255);
+        margin: 150px;
+        margin-top: -85px;
+        margin-bottom: 115px;
+        padding: 5px;
+        border-radius: 5px;
+        font-weight: 500;
+        font-size: 17px;
+        text-decoration: none;
+    }
+
+    #birthday {
+        display: flex;
+        grid-area: birthday;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        padding-left: 150px;        
+        margin: 5px;
+        margin-top: -95px;
+        font-weight: 200;
+        font-size: 17px;
+        text-decoration: none;
+    }
+
+    #box3 {
+        display: flex;
+        grid-area: box3;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        width: 380px;
+        background-color: rgb(255, 255, 255);
+        color: rgb(167, 167, 167);
+        margin: 150px;
+        margin-top: -140px;
+        margin-bottom: 170px;
+        padding: 15px;
+        padding-top: 13px;
+        padding-bottom: 10px;
+        border-radius: 5px;
+        font-weight: 300;
+        font-size: 15px;
+        text-decoration: none;
+    }
+
+    #signupbutton1 {
+        display: flex;
+        grid-area: signupbutton;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        width: 380px;
+        background-color: rgb(255, 179, 193);
+        color: rgb(255, 255, 255);
+        margin: 20px;
+        margin-left: 150px;
+        margin-top: -130px;
+        margin-bottom: 140px;
+        padding: 20px;        
+        padding-left: 15px;
+        padding-right: 15px;
+        border-radius: 5px;
+        font-weight: 500;
+        font-size: 17px;
+        text-decoration: none;
+    }
+
+</style>
