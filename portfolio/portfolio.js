@@ -1,4 +1,4 @@
-const music = new Audio(`./music/elevator-music.mp3`)
+const music = new Audio(`music/Elevator-music.mp3`)
 
 function playSong() {
     music.play()
